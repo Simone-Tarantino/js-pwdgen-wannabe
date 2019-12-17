@@ -9,4 +9,7 @@ var userPassGen = userName + userSurname + userColor + '19';
 // verifica
 console.log(userPassGen);
 // stampa su html il risultato
+document.getElementById('user-name').innerHTML = 'Ciao ' + userName;
+document.getElementById('user-surname').innerHTML = ' ' + userSurname;
+document.getElementById('user-color').innerHTML = ', a quanto pare il tuo colore preferito è il ' + userColor + ', ecco una password infallibile per te!';
 document.getElementById('password-generator').innerHTML = userPassGen;
